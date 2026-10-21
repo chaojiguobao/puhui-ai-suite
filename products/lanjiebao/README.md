@@ -5,11 +5,12 @@
 
 | 项目 | 值 |
 |:--|:--|
-| 版本 | v0.1.49（内测） |
+| 版本 | v0.1.49（内测 · 加固版） |
+| 加固 | 已开启 R8 代码混淆（APK 1.4 MB，classes.dex 322 KB，类名已重命名） |
 | 平台 | Android 10 及以上 |
 | 大小 | 3.5 MB |
 | 价格 | **免费** |
-| 下载 | [Releases → `lanjiebao-v0.1.49.apk`](../../../releases/latest) |
+| 下载 | [Releases → `lanjiebao-v0.1.49-obf.apk`](../../../releases/latest) · 1.4 MB |
 | 官网下载页 | [puhuiai.com.cn/dl](https://puhuiai.com.cn/dl/) · [catshield.cn/dl](https://catshield.cn/dl/) |
 
 ![拦接宝三通道分流工作原理](../../assets/lanjiebao-flow.svg)
@@ -86,7 +87,7 @@ App 连续 3 次心跳失败 → 提示"留言服务不可用" → **一键关�
 
 ### 第一步 · 安装（约 2 分钟）
 
-1. 下载 `lanjiebao-v0.1.49.apk`
+1. 下载 `lanjiebao-v0.1.49-obf.apk`（1.4 MB）
 2. 提示"未知来源/风险应用"时选 **允许 / 继续安装**
 3. **华为用户**若被「纯净模式」拦住：设置 → 安全和隐私 → 更多安全设置 → 纯净模式 → 关闭增强防护，装完可再打开
 
