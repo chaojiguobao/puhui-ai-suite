@@ -1,7 +1,7 @@
 # 普惠 AI 全产品线 · 官方发布仓库
 
 > **普惠 AI，让普通人也能轻松驾驭人工智能。**
-> 本站收录普惠AI自研的四款产品，全部提供**功能介绍 + 完整使用说明书 + 可下载安装包**。
+> 本站收录**普惠AI 自研的三款产品**（拦接宝 / 猫盾 / 普惠AI 指令拆解引擎）+ **一款第三方产品**（龙虾 Pro 3.0 原厂分发包），全部提供**功能介绍 + 完整使用说明书 + 可下载安装包**。
 
 [![官网](https://img.shields.io/badge/官网-puhuiai.com.cn-12724f)](https://puhuiai.com.cn)
 [![猫盾](https://img.shields.io/badge/猫盾-catshield.cn-0d3b2e)](https://catshield.cn)
