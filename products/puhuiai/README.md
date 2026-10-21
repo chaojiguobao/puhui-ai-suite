@@ -12,6 +12,10 @@
 | 下载 | [Releases → `puhuiai-chaijie-v4.0.0.exe`](../../../releases/latest) · [插件版 `puhuiai-plugin-v1.3.1.zip`](../../../releases/latest) |
 | 在线使用 | **[puhuiai.com.cn](https://puhuiai.com.cn)** |
 
+![普惠AI 指令拆解引擎链路](../../assets/puhuiai-flow.svg)
+
+> 图示：一句大白话 → 意图识别 → 术语映射（294 条）→ 指令组装 → 执行回报 → 任务包落盘。
+
 ---
 
 ## 一、这是什么

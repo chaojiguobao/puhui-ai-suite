@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" width="960" height="430">
+<style>
+  .t{font-family:'Microsoft YaHei','PingFang SC',sans-serif;fill:#e6f4ee}
+  .h{font-family:'Microsoft YaHei','PingFang SC',sans-serif;fill:#ffffff;font-weight:700}
+  .s{font-family:'Microsoft YaHei','PingFang SC',sans-serif;fill:#9fc4b5;font-size:13px}
+  .box{fill:#0f2b22;stroke:#1f6b4f;stroke-width:2;rx:12}
+  .box2{fill:#123a2c;stroke:#2e8b62;stroke-width:2;rx:12}
+  .em{fill:#0f2b22;stroke:#34d399;stroke-width:3;rx:12}
+  .ar{stroke:#34d399;stroke-width:3;fill:none;marker-end:url(#a)}
+</style><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker></defs>
+<rect width="960" height="430" fill="#07110d"/>
+<text x="32" y="46" class="h" font-size="26">普惠AI 指令拆解引擎 · 大白话 → 可执行指令</text>
+
+<rect x="30" y="96" width="170" height="86" class="em"/>
+<text x="115" y="130" class="h" font-size="15" text-anchor="middle">😀 一句大白话</text>
+<text x="115" y="156" class="s" text-anchor="middle">"帮我写个卖云南旅游的文案"</text>
+
+<rect x="228" y="96" width="150" height="86" class="box2"/>
+<text x="303" y="126" class="h" font-size="15" text-anchor="middle">① 意图识别</text>
+<text x="303" y="150" class="s" text-anchor="middle">写作/翻译/查询</text>
+<text x="303" y="168" class="s" text-anchor="middle">分析/自动化</text>
+
+<rect x="406" y="96" width="160" height="86" class="box2"/>
+<text x="486" y="126" class="h" font-size="15" text-anchor="middle">② 术语映射</text>
+<text x="486" y="150" class="s" text-anchor="middle">294 条术语库</text>
+<text x="486" y="168" class="s" text-anchor="middle">口语 → 标准概念</text>
+
+<rect x="594" y="96" width="160" height="86" class="box2"/>
+<text x="674" y="126" class="h" font-size="15" text-anchor="middle">③ 指令组装</text>
+<text x="674" y="150" class="s" text-anchor="middle">角色/任务/约束</text>
+<text x="674" y="168" class="s" text-anchor="middle">输出格式</text>
+
+<rect x="782" y="96" width="148" height="86" class="em"/>
+<text x="856" y="126" class="h" font-size="15" text-anchor="middle">④ 执行回报</text>
+<text x="856" y="150" class="s" text-anchor="middle">调用模型执行</text>
+<text x="856" y="168" class="s" text-anchor="middle">结果用人话给你</text>
+
+<path d="M202,139 L222,139" class="ar"/><path d="M380,139 L400,139" class="ar"/>
+<path d="M568,139 L588,139" class="ar"/><path d="M756,139 L776,139" class="ar"/>
+
+<rect x="30" y="224" width="900" height="70" class="box"/>
+<text x="480" y="252" class="h" font-size="15" text-anchor="middle">⑤ 任务包落盘 —— 同类活下次一键复用</text>
+<text x="480" y="276" class="s" text-anchor="middle">拆解与执行分离：翻译层不绑定某一家模型，平台可统一调度、随时换模型</text>
+
+<rect x="30" y="318" width="440" height="86" class="box2"/>
+<text x="250" y="346" class="h" font-size="15" text-anchor="middle">🌐 网页版（零安装）</text>
+<text x="250" y="370" class="s" text-anchor="middle">puhuiai.com.cn 首页直接说大白话</text>
+<text x="250" y="390" class="s" text-anchor="middle">可看拆解全过程，边用边学</text>
+
+<rect x="490" y="318" width="440" height="86" class="box2"/>
+<text x="710" y="346" class="h" font-size="15" text-anchor="middle">💻 桌面版 / 🧩 插件版</text>
+<text x="710" y="370" class="s" text-anchor="middle">桌面版 24MB 独立软件；插件版装进你自己的 AI 工具</text>
+<text x="710" y="390" class="s" text-anchor="middle">插件零算力、离线可跑、不占 token</text>
+
+</svg>

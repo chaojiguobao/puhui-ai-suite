@@ -12,6 +12,10 @@
 | 下载 | [Releases → `lanjiebao-v0.1.49.apk`](../../../releases/latest) |
 | 官网下载页 | [puhuiai.com.cn/dl](https://puhuiai.com.cn/dl/) · [catshield.cn/dl](https://catshield.cn/dl/) |
 
+![拦接宝三通道分流工作原理](../../assets/lanjiebao-flow.svg)
+
+> 图示：通讯录直通、陌生号转云端问询、紧急短号强制放行 —— 三条路互不干扰。
+
 ---
 
 ## 一、这是什么

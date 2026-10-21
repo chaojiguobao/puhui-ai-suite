@@ -13,6 +13,10 @@
 | 官网 | **[catshield.cn](https://catshield.cn)** |
 | 独立仓库 | [github.com/chaojiguobao/maodun](https://github.com/chaojiguobao/maodun) |
 
+![猫盾非侵入式监护四步](../../assets/maodun-arch.svg)
+
+> 图示：外置识别 → 行为捕获 → 规则判定 → 分级处置，全程不注入、不改一行代码。
+
 ---
 
 ## 一、这是什么

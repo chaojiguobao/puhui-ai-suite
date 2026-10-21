@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520">
+<style>
+  .t{font-family:'Microsoft YaHei','PingFang SC',sans-serif;fill:#e6f4ee}
+  .h{font-family:'Microsoft YaHei','PingFang SC',sans-serif;fill:#ffffff;font-weight:700}
+  .s{font-family:'Microsoft YaHei','PingFang SC',sans-serif;fill:#9fc4b5;font-size:13px}
+  .box{fill:#0f2b22;stroke:#1f6b4f;stroke-width:2;rx:12}
+  .box2{fill:#123a2c;stroke:#2e8b62;stroke-width:2;rx:12}
+  .em{fill:#0f2b22;stroke:#34d399;stroke-width:3;rx:12}
+  .ar{stroke:#34d399;stroke-width:3;fill:none;marker-end:url(#a)}
+</style><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker></defs>
+<rect width="960" height="520" fill="#07110d"/>
+<text x="32" y="46" class="h" font-size="26">龙虾 Pro 3.0 · 四级仿生 AGI 引擎架构</text>
+
+<rect x="120" y="80" width="720" height="56" class="em"/>
+<text x="480" y="115" class="h" font-size="17" text-anchor="middle">🧬 化学感知池（意识 / 情绪 / 疼痛 / 想象）</text>
+
+<rect x="120" y="152" width="720" height="86" class="box2"/>
+<text x="480" y="180" class="h" font-size="16" text-anchor="middle">🧠 十二大仿生子系统（大脑器官）</text>
+<text x="480" y="206" class="t" font-size="14" text-anchor="middle">逻辑 · 创意 · 感知 · 情绪 · 记忆 · 风控</text>
+<text x="480" y="228" class="t" font-size="14" text-anchor="middle">调度 · 通信 · 迭代 · 执行 · 潜意识 · 平衡</text>
+
+<rect x="120" y="254" width="720" height="76" class="box2"/>
+<text x="480" y="282" class="h" font-size="16" text-anchor="middle">⚡ 九大能源粒子（能量气血）</text>
+<text x="480" y="306" class="t" font-size="14" text-anchor="middle">稳态 · 逻辑 · 创意 · 感知 · 情绪 · 记忆 · 风控 · 通信 · 迭代</text>
+
+<rect x="120" y="346" width="720" height="56" class="box"/>
+<text x="480" y="381" class="h" font-size="16" text-anchor="middle">🛡️ 猫盾安全底座（三级隔离域 / 熔断 / 风控）</text>
+
+<rect x="120" y="418" width="720" height="56" class="box"/>
+<text x="480" y="453" class="h" font-size="16" text-anchor="middle">🦞 OpenClaw 总控中枢（全局调度 / 优先级 / 自主运行）</text>
+
+<text x="480" y="500" class="s" text-anchor="middle">对外 API：DeepSeek（对话）· 火山方舟 ARK（多模态）· 即梦 AI（图像/视频）· dq.ai6800 · 其余见 .env.template</text>
+
+</svg>

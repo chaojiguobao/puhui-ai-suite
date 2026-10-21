@@ -22,6 +22,17 @@
 
 ---
 
+## 🖼️ 两个官网长什么样
+
+| 普惠 AI 全民智能服务平台 | 猫盾 AI 安全官网 |
+|:--|:--|
+| [![普惠AI官网](assets/site-puhuiai-home.png)](https://puhuiai.com.cn) | [![猫盾官网](assets/site-catshield-home.png)](https://catshield.cn) |
+| puhuiai.com.cn | catshield.cn |
+
+> 截图取自 2026-10-21 实际线上页面（含顶部「拦接宝」通栏与首屏产品大卡片）。
+
+---
+
 ## 🌐 两个官方站点
 
 | 站点 | 地址 | 一句话 |
@@ -89,6 +100,19 @@
     ├── puhuiai/README.md          ← 普惠AI 引擎：功能 + 原理 + 说明书
     └── lobster/README.md          ← 龙虾 Pro 3.0：架构 + 安装说明书
 ```
+
+---
+
+## 🚀 国内下载更快的通道
+
+GitHub 在国内访问偶尔慢，两个官网都提供**国内加速下载**（阿里云上海节点，HTTPS）：
+
+| 产品 | 国内下载地址 |
+|:--|:--|
+| 📱 拦接宝 APK | https://puhuiai.com.cn/dl/ · https://catshield.cn/dl/ |
+| 🛡️ 猫盾 4.0 | https://catshield.cn （首页「下载」区）|
+| 🗣️ 普惠AI 引擎 / 插件 | https://puhuiai.com.cn/store |
+| 🦞 龙虾 Pro 3.0 | https://puhuiai.com.cn/store |
 
 ---
 

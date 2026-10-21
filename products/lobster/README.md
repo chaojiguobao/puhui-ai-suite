@@ -12,6 +12,10 @@
 | 价格 | 引擎源码包**免费**（商用需授权） |
 | 下载 | [Releases → `lobster-pro3.0-engine.zip`](../../../releases/latest) · 25 KB 架构源码包 |
 
+![龙虾 Pro 3.0 五层仿生架构](../../assets/lobster-arch.svg)
+
+> 图示：化学感知池 / 十二子系统 / 九大能源粒子 / 猫盾安全底座 / OpenClaw 总控中枢。
+
 ---
 
 ## 一、这是什么

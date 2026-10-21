@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" width="960" height="460">
+<style>
+  .t{font-family:'Microsoft YaHei','PingFang SC',sans-serif;fill:#e6f4ee}
+  .h{font-family:'Microsoft YaHei','PingFang SC',sans-serif;fill:#ffffff;font-weight:700}
+  .s{font-family:'Microsoft YaHei','PingFang SC',sans-serif;fill:#9fc4b5;font-size:13px}
+  .box{fill:#0f2b22;stroke:#1f6b4f;stroke-width:2;rx:12}
+  .box2{fill:#123a2c;stroke:#2e8b62;stroke-width:2;rx:12}
+  .em{fill:#0f2b22;stroke:#34d399;stroke-width:3;rx:12}
+  .ar{stroke:#34d399;stroke-width:3;fill:none;marker-end:url(#a)}
+</style><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker></defs>
+<rect width="960" height="460" fill="#07110d"/>
+<text x="32" y="46" class="h" font-size="26">猫盾 4.0 · 非侵入式监护四步</text>
+
+<rect x="40" y="90" width="196" height="120" class="box2"/>
+<text x="138" y="124" class="h" font-size="16" text-anchor="middle">① 外置识别</text>
+<text x="138" y="150" class="t" font-size="13" text-anchor="middle">扫描本机 AI 资产</text>
+<text x="138" y="172" class="s" text-anchor="middle">智能体/工作流/知识库/模型</text>
+<text x="138" y="192" class="s" text-anchor="middle">全部登记造册</text>
+
+<rect x="268" y="90" width="196" height="120" class="box2"/>
+<text x="366" y="124" class="h" font-size="16" text-anchor="middle">② 行为捕获</text>
+<text x="366" y="150" class="t" font-size="13" text-anchor="middle">系统外部读取</text>
+<text x="366" y="172" class="s" text-anchor="middle">进程/文件/网络/命令</text>
+<text x="366" y="192" class="s" text-anchor="middle">不注入 · 不挂钩 · 不改码</text>
+
+<rect x="496" y="90" width="196" height="120" class="box2"/>
+<text x="594" y="124" class="h" font-size="16" text-anchor="middle">③ 规则判定</text>
+<text x="594" y="150" class="t" font-size="13" text-anchor="middle">比对七条出厂底线</text>
+<text x="594" y="172" class="s" text-anchor="middle">跨库私读/删库/扫隐私</text>
+<text x="594" y="192" class="s" text-anchor="middle">外发/高危命令/改配置</text>
+
+<rect x="724" y="90" width="196" height="120" class="em"/>
+<text x="822" y="124" class="h" font-size="16" text-anchor="middle">④ 分级处置</text>
+<text x="822" y="150" class="t" font-size="13" text-anchor="middle">观测 / 预警</text>
+<text x="822" y="172" class="t" font-size="13" text-anchor="middle">拦截（冻结）/ 封禁（隔离）</text>
+<text x="822" y="192" class="s" text-anchor="middle">全程写入审计日志</text>
+
+<path d="M236,150 L262,150" class="ar"/><path d="M464,150 L490,150" class="ar"/><path d="M692,150 L718,150" class="ar"/>
+
+<rect x="40" y="248" width="880" height="64" class="box"/>
+<text x="480" y="276" class="h" font-size="15" text-anchor="middle">🛡️ 七条底线 · 四条处置 · 六大界面 · 后台守护引擎（登录自启 / CPU 超限自动降采样）</text>
+<text x="480" y="298" class="s" text-anchor="middle">拦截 = 冻结进程（数据不丢，可一键恢复） ｜ 封禁 = 终止 + 文件移入隔离区（不删除，可回退）</text>
+
+<rect x="40" y="330" width="880" height="86" class="box" style="stroke:#8b5cf6"/>
+<text x="480" y="358" class="h" font-size="15" text-anchor="middle">技术口径（不吹牛）</text>
+<text x="480" y="382" class="s" text-anchor="middle">监护基于系统级行为采样（默认 2 秒一次，可调），覆盖进程/文件/网络/命令四类动作</text>
+<text x="480" y="402" class="s" text-anchor="middle">精确到单次系统调用的拦截需内核驱动 —— 本产品不采用内核注入</text>
+
+</svg>
