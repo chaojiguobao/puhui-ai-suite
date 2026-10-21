@@ -16,7 +16,7 @@
 | 📱 **拦接宝** | 陌生电话不响铃，对方先用短信自报家门；通讯录照常响 | Android 10+ | [`lanjiebao-v0.1.49.apk`](../../releases/latest) · 3.5 MB | [查看](products/lanjiebao/README.md) |
 | 🛡️ **猫盾 4.0** | AI-AGI 智能体规范监视器：不改一行代码，7×24 外部监护本地 AI | Windows 10/11 x64 | [`maodun-setup-v4.0.0.exe`](../../releases/latest) · 8.1 MB | [查看](products/maodun/README.md) |
 | 🗣️ **普惠AI 指令拆解引擎** | 把"大白话"翻译成 AI 能执行的精确指令，294 条术语生活化解释 | Windows / 网页 | [`puhuiai-chaijie-v4.0.0.exe`](../../releases/latest) · 24 MB | [查看](products/puhuiai/README.md) |
-| 🦞 **龙虾 Pro 3.0** | 四级仿生 AGI 引擎：化学池 + 十二子系统 + 九大能源粒子 | Windows + Python 3.10+ | [`lobster-pro3.0-engine.zip`](../../releases/latest) · 25 KB 源码包 | [查看](products/lobster/README.md) |
+| 🦞 **龙虾 Pro 3.0** | 四级仿生 AGI 引擎：化学池 + 十二子系统 + 九大能源粒子 | Windows 10/11 x64 | [`lobster-pro3.0-setup.exe`](../../releases/latest) · 16 MB 安装包 | [查看](products/lobster/README.md) |
 
 > 💡 全部安装包集中在 **[Releases 页](../../releases/latest)**，点开即可下载，无需注册。
 
@@ -74,7 +74,7 @@
 | 项目 | 说明 |
 |:--|:--|
 | **个人使用** | 全部产品对个人用户 **免费**（猫盾终身免费、永久升级） |
-| **源码** | 闭源专有（龙虾 Pro 3.0 提供引擎架构源码包，非全量商业代码） |
+| **源码** | **全部产品闭源专有 —— 只发布可执行程序，不提供源代码**（含龙虾 Pro 3.0） |
 | **商用** | 请联系作者授权 |
 | **禁止** | 二次售卖、去除品牌标识后分发、用于诈骗/骚扰/侵犯他人隐私 |
 
@@ -112,7 +112,7 @@ GitHub 在国内访问偶尔慢，两个官网都提供**国内加速下载**（
 | 📱 拦接宝 APK | https://puhuiai.com.cn/dl/ · https://catshield.cn/dl/ |
 | 🛡️ 猫盾 4.0 | https://catshield.cn （首页「下载」区）|
 | 🗣️ 普惠AI 引擎 / 插件 | https://puhuiai.com.cn/store |
-| 🦞 龙虾 Pro 3.0 | https://puhuiai.com.cn/store |
+| 🦞 龙虾 Pro 3.0 | https://puhuiai.com.cn/store（安装包 16 MB） |
 
 ---
 

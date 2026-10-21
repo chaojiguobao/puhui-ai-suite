@@ -9,7 +9,7 @@
 | 平台 | Windows 10/11 x64 · 或直接用网页版 |
 | 大小 | 24 MB |
 | 价格 | **免费**（平台算力按量计费，另有统一 Token 蓄水池） |
-| 下载 | [Releases → `puhuiai-chaijie-v4.0.0.exe`](../../../releases/latest) · [插件版 `puhuiai-plugin-v1.3.1.zip`](../../../releases/latest) |
+| 下载 | [Releases → `puhuiai-chaijie-v4.0.0.exe`](../../../releases/latest) · 插件版需授权获取 |
 | 在线使用 | **[puhuiai.com.cn](https://puhuiai.com.cn)** |
 
 ![普惠AI 指令拆解引擎链路](../../assets/puhuiai-flow.svg)
@@ -42,7 +42,9 @@
 一个账号，统一调用多家 AI 能力，不用每家注册一遍、不用自己对接 API。平台侧提供**统一 Token 蓄水池**（低价算力池），用多少算多少。
 
 ### 5. 插件版（给你的 AI 装上这个能力）
-`puhuiai-plugin-v1.3.1.zip` 可以装进你自己的 AI 工具（小龙虾 / Hermes / 任意支持插件的 Agent），**零算力、离线可跑、不占你的 token**。
+可以装进你自己的 AI 工具（小龙虾 / Hermes / 任意支持插件的 Agent），**零算力、离线可跑、不占你的 token**。
+
+> 插件版**闭源**，不随仓库公开分发；需要的用户请通过官网客服申请授权后获取。
 
 ### 6. 学习资料库
 平台可上传/下载零基础 AI 学习资料（中国版简化 AI 开源社区思路：小白版 GitHub）。
@@ -86,10 +88,11 @@
 
 ### 方式 C · 插件版（装进你自己的 AI 工具）
 
-1. 下载 `puhuiai-plugin-v1.3.1.zip`
-2. 解压到你的 AI 工具的插件目录（如 小龙虾 / Hermes 的 plugins 目录）
-3. 重启你的 AI 工具，在技能列表里确认「普惠AI指令拆解」已加载
-4. 之后你在那个工具里说大白话，它会自动先走拆解
+> 插件版闭源，需授权获取（官网客服申请）。拿到安装包后：
+
+1. 解压到你的 AI 工具的插件目录（如 小龙虾 / Hermes 的 plugins 目录）
+2. 重启你的 AI 工具，在技能列表里确认「普惠AI指令拆解」已加载
+3. 之后你在那个工具里说大白话，它会自动先走拆解
 
 ### 常用操作速查
 
@@ -139,4 +142,4 @@
 
 ---
 
-📥 **[下载桌面版 / 插件版](../../../releases/latest)** · 🌐 **[puhuiai.com.cn](https://puhuiai.com.cn)**
+📥 **[下载桌面版](../../../releases/latest)** · 🌐 **[puhuiai.com.cn](https://puhuiai.com.cn)**

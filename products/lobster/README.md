@@ -1,20 +1,18 @@
-# 🦞 龙虾 Pro 3.0 · 四级仿生 AGI 引擎
+# 🦞 龙虾 Pro 3.0 · 四级仿生 AGI 引擎（Windows 安装包）
 
 > **不是调用大模型的应用，是给"数字生命"搭骨架的引擎。**
 > 化学感知池 + 十二大仿生子系统 + 九大能源粒子 + 猫盾安全底座 + OpenClaw 总控中枢
 
 | 项目 | 值 |
 |:--|:--|
-| 版本 | 3.0（引擎架构源码包 v1.0.0） |
-| 平台 | Windows 10/11 64-bit + Python 3.10+ |
+| 版本 | 3.0 |
+| 平台 | Windows 10 / 11 64-bit |
+| 形式 | **NSIS 安装包**（约 16 MB），双击安装，内置运行环境 |
 | 最低配置 | 双核 2.0GHz / 4GB 内存 / 1GB 磁盘 |
 | 推荐配置 | 四核 3.0GHz+ / 16GB / 10GB SSD |
-| 价格 | 引擎源码包**免费**（商用需授权） |
-| 下载 | [Releases → `lobster-pro3.0-engine.zip`](../../../releases/latest) · 25 KB 架构源码包 |
-
-![龙虾 Pro 3.0 五层仿生架构](../../assets/lobster-arch.svg)
-
-> 图示：化学感知池 / 十二子系统 / 九大能源粒子 / 猫盾安全底座 / OpenClaw 总控中枢。
+| 价格 | 个人使用**免费**；商用需授权 |
+| 下载 | [Releases → `lobster-pro3.0-setup.exe`](../../../releases/latest) |
+| 源码 | **闭源** —— 本产品只发布可执行安装包，不提供源代码 |
 
 ---
 
@@ -43,7 +41,7 @@
 └─────────────────────────────────────────────────────┘
 ```
 
-**适用人群**：想让 AI 具备"连续状态"而不是"一问一答"的开发者；研究仿生 AI / 涌现行为的工程师；需要多智能体协作底座的团队。
+**适用人群**：想让 AI 具备"连续状态"而不是"一问一答"的进阶用户；研究仿生 AI / 涌现行为的工程师；需要多智能体协作底座的小团队。
 
 ## 二、核心功能
 
@@ -75,148 +73,94 @@
 ### 5. OpenClaw 总控中枢
 全局调度、优先级排定、自主运行循环。
 
-## 三、本仓库提供的包是什么（重要，别误会）
+## 三、安装包里有什么
 
-`lobster-pro3.0-engine.zip`（25 KB）是**引擎架构源码包**，包含可跑的最小闭环：
+安装包内含**完整可运行程序 + 内置 Python 运行环境**，装完即可用，**不需要你自己装 Python、不需要 pip install**。
+
+安装后目录结构：
 
 ```
-engine.py                    引擎入口
-config/.env.template         API 配置模板
-config/atomic_config.json    原子配置
-core/atoms.py                九大能源粒子实现
-core/chemistry_pool.py       化学感知池实现
-scripts/chemistry_integration.py
-scripts/subsystem_loader.py  子系统装载
-scripts/integration_test.py  集成测试
-scripts/daily_review.py      每日自省
-subsystems/*.py              十二子系统骨架（逻辑/创意/情绪/商务/执行…）
+C:\LobsterPro3.0\
+├── runtime\           内置运行环境（无需另装 Python）
+├── app\               引擎主程序与子系统
+├── config\            配置目录（.env 在这里，别外传）
+├── logs\              运行日志
+└── 启动龙虾Pro3.0.exe   主程序
 ```
 
-**它不含**：完整商业版的多模型对接、行业工作流模板、可视化控制台。那些属于商用版，需授权获取。
-
-**定位**：给开发者一个**看得懂、跑得起来、改得动**的仿生引擎骨架，而不是一个打包好的黑盒。
+> 🔒 **本产品闭源**：只发布可执行程序，不提供 `.py` 源码；禁止反编译后分发。
 
 ## 四、操作使用说明书
 
-### 第一步 · 环境准备
+### 第一步 · 安装（约 3 分钟）
 
-| 项目 | 要求 |
-|:--|:--|
-| 操作系统 | Windows 10/11 64-bit |
-| Python | **3.10 及以上** |
-| 内存 | 建议 8GB+（跑本地模型需 16GB+） |
-| 磁盘 | 1GB 起（模型另算） |
+1. 下载 `lobster-pro3.0-setup.exe`（16 MB）
+2. 双击运行；Windows 提示"未知发布者"时点「更多信息 → 仍要运行」
+3. 选择安装目录（建议非 C 盘，如 `D:\LobsterPro3.0`）
+4. 一路「下一步」完成安装
+5. 安装完成后桌面/开始菜单出现「龙虾 Pro 3.0」
 
-### 第二步 · 解压与安装依赖
+> 需要 Windows 10 及以上 64 位系统。
 
-```bash
-# 1) 解压到不带中文/空格的路径，例如
-#    D:\LobsterPro3.0\agi-engine
+### 第二步 · 配置 API（必填至少 1 项）
 
-# 2) 进入目录
-cd D:\LobsterPro3.0\agi-engine
+首次启动会打开配置向导，或在 `config/.env` 里填写：
 
-# 3) 建虚拟环境（推荐）
-python -m venv .venv
-.venv\Scripts\activate
+| # | 用途 | 获取地址 | 必填 |
+|:--|:--|:--|:--|
+| 1 | **DeepSeek API Key**（主力对话模型） | https://platform.deepseek.com → API Keys → Create | ✅ 必填 |
+| 2 | 火山方舟 ARK API Key（多模态） | https://console.volcengine.com/ark | 可选 |
+| 3 | 即梦 AI API Key（图像/视频生成） | https://console.volcengine.com | 可选 |
+| 4 | dq.ai6800 接口地址 + Token | https://dq.ai6800.com | 可选 |
+| 5 | 其它第三方接口 | 见 `config/.env.template` 注释 | 可选 |
 
-# 4) 装依赖
-pip install -r requirements.txt
-```
+> ⚠️ **API Key 就是钱**：不要发群里、不要上传到任何仓库。`config/` 目录里是明文，注意别分享。
 
-### 第三步 · 配置 API（必填 5 项）
+### 第三步 · 首次自检
 
-复制 `config/.env.template` 为 `config/.env`，逐项填入：
+启动后在「系统状态」页点「**集成自检**」：
 
-| # | 用途 | 获取地址 |
-|:--|:--|:--|
-| 1 | **DeepSeek API Key**（主力对话模型） | https://platform.deepseek.com → API Keys → Create |
-| 2 | **火山方舟 ARK API Key**（多模态） | https://console.volcengine.com/ark |
-| 3 | **dq.ai6800 接口地址 + Token** | https://dq.ai6800.com |
-| 4 | **即梦 AI API Key**（图像/视频生成） | https://console.volcengine.com |
-| 5 | 其余第三方接口（按 `.env.template` 注释填） | 见模板说明 |
+- 十二个子系统状态全部 **OK**
+- 化学池初始化成功（显示九大粒子能量分配）
+- 总控中枢进入「待命」
 
-> ⚠️ **API Key 就是钱**：不要提交到 git、不要发群里。`.env` 已在 `.gitignore` 里。
+任何一项红叉，按提示检查对应 API 是否填对。
 
-### 第四步 · 自检（确认引擎能起来）
+### 第四步 · 日常使用
 
-```bash
-python scripts/integration_test.py
-```
+1. 主界面「对话」页直接输入（它自带化学态，不用你写提示词）
+2. 「状态」页可看当前九大粒子能量、四种化学浓度（意识/情绪/疼痛/想象）
+3. 「自省」页每天生成一次状态报告 + 参数微调建议
+4. 引擎会按周期自动做"化学态归零 + 粒子能量重分配"，避免长期单极化（这是它保持"活性"的机制）
 
-看到 **12 个子系统全部 `OK`** + 化学池初始化成功，即环境就绪。
-任何一项报错，按提示装对应依赖。
+### 第五步 · 卸载
 
-### 第五步 · 启动引擎
-
-```bash
-python engine.py
-```
-
-启动后会看到：
-- 九大能源粒子的初始能量分配
-- 化学池当前浓度（意识/情绪/疼痛/想象）
-- 十二子系统装载状态
-- 总控中枢进入待命
-
-### 第六步 · 日常运行与自省
-
-```bash
-# 每日自省（生成当日状态报告 + 参数微调建议）
-python scripts/daily_review.py
-```
-
-引擎会按配置周期自动做一次"化学态归零 + 粒子能量重分配"，避免长期单极化（这是它保持"活性"的机制）。
+控制面板 → 程序和功能 → 「龙虾 Pro 3.0」→ 卸载。
+建议先导出一次日志/自省报告留档；`config/` 里的 API Key 记得清理。
 
 ## 五、常见问题
 
 **Q1 这和大模型 Agent 框架（如 LangChain）有什么区别？**
 LangChain 是"工具编排"；龙虾是"状态生命"。前者无内部状态，每次调用平等；后者有化学池、能量粒子、子系统竞争，**同样的输入在不同状态下会产生不同输出**。
 
-**Q2 25KB 的包能干什么？**
-能跑通引擎骨架：化学池、九大粒子、十二子系统装载、集成测试、每日自省。**它是给你改的**，不是给你开箱即用的。
+**Q2 要不要自己装 Python？**
+不用。安装包内置运行环境（runtime 目录），装完直接能用。
 
 **Q3 必须配 5 个 API 吗？**
 最小可用只需 DeepSeek 一个（对话）。其余 API 对应多模态/图像/搜索能力，不填则对应子系统降级为本地模拟。
 
 **Q4 会不会很吃资源？**
-引擎本身很轻（Python 进程，常驻约 100MB）。吃资源的是你挂上去的本地模型。
+引擎本身很轻（常驻约 100MB）。吃资源的是你挂上去的本地模型。
 
-**Q5 能跑在 Linux 上吗？**
-代码本身跨平台，但本包在 Windows 上验证过；Linux 需自行适配路径与启动脚本。
+**Q5 开源吗？**
+**不开源。** 只发布 Windows 可执行安装包，不提供源代码，禁止反编译后分发。个人使用免费，商用需授权。
 
-**Q6 商用怎么授权？**
-引擎源码包免费用于学习研究；商用（含二次分发、嵌入产品售卖）需联系作者授权。
+**Q6 能跑在 Mac / Linux 上吗？**
+当前版本仅 Windows 10/11 64 位。
 
----
-
-## 六、目录结构
-
-```
-agi-engine/
-├── engine.py                  引擎入口
-├── requirements.txt
-├── config/
-│   ├── .env.template          API 配置模板
-│   ├── atomic_config.json     原子配置
-│   ├── engine.yaml            主配置（商用版）
-│   ├── energy_particles.yaml  九大粒子配置（商用版）
-│   └── subsystems.yaml        十二子系统配置（商用版）
-├── core/
-│   ├── atoms.py               九大能源粒子
-│   ├── chemistry_pool.py      化学感知池
-│   └── total_control.cmd      总控激活
-├── subsystems/                十二子系统骨架
-│   ├── logic.py / creation_engine.py / perception.py
-│   ├── emotion_adapter.py / memory.py / risk_control.py
-│   └── ...
-└── scripts/
-    ├── chemistry_integration.py
-    ├── subsystem_loader.py
-    ├── integration_test.py
-    └── daily_review.py
-```
+**Q7 商用怎么授权？**
+通过官网 [puhuiai.com.cn](https://puhuiai.com.cn) 客服转商务。
 
 ---
 
-📥 **[下载引擎源码包](../../../releases/latest)** · 🌐 **[puhuiai.com.cn](https://puhuiai.com.cn)**（平台与其它产品）
+📥 **[下载安装包](../../../releases/latest)** · 🌐 **[puhuiai.com.cn](https://puhuiai.com.cn)**
